@@ -33,7 +33,6 @@ class School
   end
   
   def sort
-   # student_hash= @roster.sort_by{|k,v| k}
     @roster.map do |grade, name|
       name.sort
       binding.pry
