@@ -28,8 +28,9 @@ class School
       end
   end
   
-  def grade()
-    
+  def grade(level)
+    @roster[level]
+    binding.pry
   end
   
 end 
