@@ -35,7 +35,7 @@ class School
   def sort
    # student_hash= @roster.sort_by{|k,v| k}
     @roster.map do |grade, name|
-      grade.sort!
+      grade.sort
       name.sort
       binding.pry
     end
