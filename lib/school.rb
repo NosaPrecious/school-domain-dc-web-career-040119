@@ -33,7 +33,7 @@ class School
   end
   
   def sort
-    @roster.sort_by{|k,v| k, v.sort}
+    @roster.sort_by{|k,v| [k], v.sort}
     #binding.pry
   end
   
