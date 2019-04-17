@@ -33,10 +33,12 @@ class School
   end
   
   def sort
-    @roster.map do |grade, name|
-      name.sort
-      binding.pry
+    sorted_student_hash= @roster.map do |grade, name|
+      name.sort!
     end
+    
+    sorted_student_hash
+    binding.pry
   end
   
 end 
