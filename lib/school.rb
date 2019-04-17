@@ -36,7 +36,7 @@ class School
     @roster.map do |grade, name|
       name.sort!
     end
-    @roster.sort_by{|grade,nname| grade}
+    @roster.sort_by{|grade,name| grade}
     binding.pry
   end
   
