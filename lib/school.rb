@@ -33,7 +33,8 @@ class School
   end
   
   def sort
-    @roster.sort_by{|k,v| k}
+    n_hash= @roster.sort_by{|k,v| k}
+    n_hash.collect{|k,v| v.sort}
     binding.pry
   end
   
