@@ -33,11 +33,9 @@ class School
   end
   
   def sort
-    @roster.sort_by do |k,v| 
-      k
-      v.sort
-    #binding.pry
-  end
+    @roster.map do |grade, name|
+      binding.pry
+    end
   end
   
 end 
